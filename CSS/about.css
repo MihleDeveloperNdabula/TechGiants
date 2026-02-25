@@ -1,0 +1,46 @@
+.abtTbl{ /*background of the table */
+	margin : 30px;
+	background-color : #D5AF83;
+	text-align : center;
+}
+
+.abtText{ 
+	padding-right: 20px;
+	padding-left: 20px;
+	text-align : left;
+}
+#contact{ 
+	display : grid;
+	margin : 50px;
+	padding : 20px 100px;
+	background-color : #845825;
+	color : #D5AF83;
+}
+
+/*changing the color of the table row with the images (the top row)*/
+.trTop{
+	background-image:linear-gradient(to bottom,#4A3115,#6B4C27);
+	color : white;
+}
+
+.contList{
+	background-color : #845825;
+	padding : 30px 30px;
+	color : black;
+}
+
+dt, dd{
+	display : inline;
+}
+
+table, th, td {
+	border: none; /* Removes all borders from the table, header cells, and data cells */
+}
+
+td{
+	border-right: 3px solid #4A3115;
+}
+
+table {
+	border-collapse: collapse; /* Prevents default double borders from appearing */
+}

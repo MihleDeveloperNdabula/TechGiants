@@ -1,0 +1,22 @@
+
+/*feedback page*/
+
+
+#details{
+    width: 40%;
+    margin:40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+#details button{
+    width: 120px;
+    margin: 15px auto 0 auto;
+    padding: 8px;
+    cursor: pointer;
+
+}
+
+#details input{
+    padding: 8px;
+}

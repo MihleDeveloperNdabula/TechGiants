@@ -1,0 +1,87 @@
+#logo{
+    padding-right : 20px;
+    padding-left : 20px;
+}
+body {			/* sets the overall appearance of the page */		
+    font-family: Arial, Helvetica, sans-serif;
+	height:100%;
+	margin:0;
+    margin : 25px;
+	background-image:radial-gradient(#fff3e1,#F2AB58);
+}
+
+header, main, footer {			/*only thing that isnt padded, i.e. will touch the sides of the screen, is #mainmenu which is placed outside of the three main sections, between header and main */
+	padding: 25px;
+    margin : 50px;
+}
+
+header {
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+	font-family: serif;
+}
+
+#mainmenu {			/* this is the nav element that contains the main menu */
+	position: sticky;
+	top: 0;
+}
+
+#mainmenu ul{			/* this is being used for the nav menu at the top - should really be specific to a nav or menu class*/
+    padding: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    overflow: hidden;
+    background-image: linear-gradient(to right,#291B0B, #4A3115);
+}
+
+
+#mainmenu li a{			/* descendant combinator - all link (a) elements that occur within a list item within mainmenu nav */
+    align-items: center;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    top: 0;
+}
+
+#mainmenu a:hover{		
+    background-color: white;
+    color: black;
+}
+
+#mainmenu a.currentpage{			/* changes appearance of link element that is for current page using custom class */
+    background-image:radial-gradient(#E8CEB0,#D98F3D);
+    color: black;
+}
+
+#mainmenu a:active{		/* changes item to grey as user clicks on it */
+    background-color: grey;
+    color: black;
+}
+
+a.navbutton {
+	font-family: Arial, Helvetica, sans-serif;
+    	display: inline-block;
+    	color: white;
+	background-color: black;
+    	text-align: center;
+    	padding: 15px 20px;
+    	text-decoration: none;
+}
+
+a.navbutton:hover{
+    background-color: white;
+    color: black;
+}
+
+a.navbutton:active{
+    background-color: grey;
+    color: black;
+}
