@@ -85,3 +85,7 @@ a.navbutton:active{
     background-color: grey;
     color: black;
 }
+
+.bookcover {
+	aspect-ratio: 2 / 3;
+}

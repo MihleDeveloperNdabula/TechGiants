@@ -1,5 +1,5 @@
 .dropBt{
-    background-color: rgb(0, 30, 128);
+    background-color: rgb(158, 108, 0);
     color: white;
     padding: 8px;
     border: 1vh;
@@ -10,10 +10,12 @@
     display: inline-block;
 }
 
+
 .dropDown-content{
     display: none;
     position: absolute;
-    background-color: grey;
+    background-color: rgb(158, 108, 0);
+    color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -26,8 +28,11 @@
 }
 
 .dropDown-content input:hover{
-    background-color: aliceblue;
+    background-color: rgb(255, 250, 240);
 }
 
 .dropDown:hover .dropDown-content {display: block;}
-.dropDown:hover .dropBt {background-color: #3e8e41;}
+.dropDown:hover .dropBt {
+    background-color: white;
+    color:black;
+}

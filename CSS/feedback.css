@@ -5,7 +5,7 @@
 #details{
     width: 40%;
     margin:40px auto;
-    display: flex;
+    display: flex; /*flexbox requirement #7*/
     flex-direction: column;
     gap: 12px;
 }
@@ -20,3 +20,5 @@
 #details input{
     padding: 8px;
 }
+
+

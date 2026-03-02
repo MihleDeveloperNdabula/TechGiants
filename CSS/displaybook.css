@@ -1,0 +1,50 @@
+.coverimage {
+  float: left;
+  width: 40%;
+}
+
+.coverimage img {
+	width: 400px;
+	height: 600px;
+}
+
+.basicdetails {
+}
+
+.admindetails p{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.genredetails {
+}
+
+.contentdetails p{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.book_display:after , .book_details:after , .rating_details:after , similar_books:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.rating_details h3 {
+	display: inline-block;
+}
+
+.review {
+	text-align: left;
+	background-color: white;
+}
+
+.bookrec {
+  float: left;
+  width: 20%;
+}
+
+.bookrec img {
+	width: 200px;
+	height: 300px;
+}

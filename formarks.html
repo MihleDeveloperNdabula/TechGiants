@@ -1,80 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Required for Pracs - Giant Library</title>
-    <link rel="icon" type="image/x-icon" href="randombook.png">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Required for Pracs - Giant Library</title>
+	<link rel="icon" type="image/x-icon" href="Images/favicon.png">
 	<link rel="stylesheet" href="css/basicstyling.css">
+	<link rel="stylesheet" href="css/formarks.css">
 </head>
+
 <body>
+
+	<nav id = "mainmenu">
+		<ul>
+			<li><img src = "Images/logo.png" width = 65 height = 85 id = "logo"></li>
+			<li>
+			<form id="search_mainmenu" action="searchresults.html" method="get"> 
+			<input type="search" id="mainmenu_searchquery" name="mainmenu_searchquery" placeholder="Search......" required>
+			</form>
+			</li>
+			<li><a href="home.html">Home</a></li> <!-- number 4, integrating relative URLS-->
+			<li><a href="browse.html">Browse</a></li>
+			<li><a href="login.html">Login</a></li>
+			<li><a href="signup.html">Sign Up</a></li>
+			<li><a class="currentpage">About Us</a></li>
+			<li><a href="feedback.html">Give Us Feedback</a></li>
+			<li><a href="formarks.html">Required Features for Practical</a></li>
+		</ul>
+	</nav>
+
 	<header>
-	<h1>Required Features for Practicals</h1>
-	<br>
-	<button><a href="index.html">Back to Home</a></button>
+		<h1>Required Features for Practicals</h1>
+		<br>
+		<button><a href="home.html">Back to Home</a></button>
 	</header>
 
-    <main>
-	<br>
-	<h2>Ordered List of Best 3rd Year Subjects</h2>
-	<ol>			<!-- number 7, having HTML lists (ordered list) -->
-  	  <li>Computer Science</li>
-  	  <li>Everything else</li>
-	</ol>
-	<br>
+	<main>
+		<h1>Responsive Flexbox</h1>
 
-	<h2>This is a video plug-in:</h2>
-	<video width="200" height="310" autoplay muted controls>	<!-- number 9,  having HTML Plug-ins, Video -->
-  	<source src="randomkittens.mp4" type="video/mp4">
-  	<source src="randomkittens.ogg" type="video/ogg">
-	Your browser does not support the video tag.		<!-- fallback text (for if browser can't play video -->
-	</video>
-	<br> <br>
+		<p>Mihle likes onions.</p>
+		<p><strong>Ndemo is done with R.</strong></p>
 
-	
-
-	<h2>Below are six different uses of colour through HTML styling:</h2>	<!-- number 8, use at least five different colours in HTML styling -->
-	<p style="color:green; font-size: 150%;">This is a boring green.</p>
-	<p style="color:white; background-color:black; font-family: courier;">This text belongs in a choose-your-own-adventure game.</p>
-	<p style="background-color:tomato;">Why is there a colour called Tomato??</p>
-	<p style="background-color:yellow; color:orange; font-size: 150%;"><b>This text gives you a headache.</b></p>
-	<p style="background-color:pink; color:crimson;">This text likes Legally Blonde</p>
-	<p style="color:darkgoldenrod; font-size: 150%;"><b>Tomato is a weird colour name, but DarkGoldenRod is worse.</b></p>
-	<br> <br>				<!-- number 2,  in paragraphing style make use of the <br /> tags -->
-
-	<h2>Below are five different examples of HTML styles:</h2>	<!-- number 8, use at least four different HTML styles -->
-	<p style="font-family:courier;">This text looks like it was typed on a typewriter.</p>
-	<p style="font-size:200%;">This text is big.</p>
-	<p style="text-align:center;">This text is in the middle of the page.</p>
-	<p style="text-align:right;">This text is way over here.</p>
-	<p style="font-size:75%; font-family:verdana;">This text is small and neat.</p>
-	<br> <br>
-
-	<h2>This is a link to a YouTube Video:</h2>
-	<a href="https://youtu.be/dQw4w9WgXcQ?si=CCLU3beio6qBgxid">Very Important</a>	<!-- number 9, have a link to social media or YouTube -->
-	<br> <br>
+		<div class="flex-container">
+			<div class="flex-item">item 1</div>
+			<div class="flex-item">item 2</div>
+			<div class="flex-item">item 3</div>
+		</div>
 
 
-	<h2>This is a Tiktok video:</h2>
-	<a href="https://www.tiktok.com/@idksterlingopp3/video/7597311654325439776?is_from_webapp=1&sender_device=pc">Very Important</a>	<!-- number 9, have a link to social media or YouTube -->
-	<br> <br>
+		<br>
+		<h2>Ordered List of Best 3rd Year Subjects</h2>
+		<ol> <!-- number 7, having HTML lists (ordered list) -->
+			<li>Computer Science</li>
+			<li>Everything else</li>
+		</ol>
+		<br>
 
-	<h2>This is a link to the Rhodes Library website:</h2>
-	<a href="https://www.ru.ac.za/library/">RU Library</a>		<!-- number 4, intergrate absolute URLs -->
-	<br> <br>
+		<h2>This is a video plug-in:</h2>
+		<video width="200" height="310" autoplay muted controls> <!-- number 9,  having HTML Plug-ins, Video -->
+			<source src="randomkittens.mp4" type="video/mp4">
+			<source src="randomkittens.ogg" type="video/ogg">
+			Your browser does not support the video tag. <!-- fallback text (for if browser can't play video -->
+		</video>
+		<br> <br>
 
-	<h2>This is a link to Taryn's instagram page:</h2>
-	<a href="https://www.instagram.com/tarynslittlepotofgold/">RU Library</a>		<!-- number 4, intergrate absolute URLs -->
-	<br> <br>
 
 
-	<h2>Below is an embedded pdf:</h2>
-	<embed width="100%" height="500px" src="randompdf.pdf">		<!-- number 9,  have HTML Plug-ins -->
-	<table>
-		<tr></tr>
-	</table>
-	
-    </main>
-   
+		<h2>Below are six different uses of colour through HTML styling:</h2>
+		<!-- number 8, use at least five different colours in HTML styling -->
+		<p style="color:green; font-size: 150%;">This is a boring green.</p>
+		<p style="color:white; background-color:black; font-family: courier;">This text belongs in a
+			choose-your-own-adventure game.</p>
+		<p style="background-color:tomato;">Why is there a colour called Tomato??</p>
+		<p style="background-color:yellow; color:orange; font-size: 150%;"><b>This text gives you a headache.</b></p>
+		<p style="background-color:pink; color:crimson;">This text likes Legally Blonde</p>
+		<p style="color:darkgoldenrod; font-size: 150%;"><b>Tomato is a weird colour name, but DarkGoldenRod is
+				worse.</b></p>
+		<br> <br> <!-- number 2,  in paragraphing style make use of the <br /> tags -->
+
+		<h2>Below are five different examples of HTML styles:</h2>
+		<!-- number 8, use at least four different HTML styles -->
+		<p style="font-family:courier;">This text looks like it was typed on a typewriter.</p>
+		<p style="font-size:200%;">This text is big.</p>
+		<p style="text-align:center;">This text is in the middle of the page.</p>
+		<p style="text-align:right;">This text is way over here.</p>
+		<p style="font-size:75%; font-family:verdana;">This text is small and neat.</p>
+		<br> <br>
+		<!--these are the links to social media pages-->
+		<h2>This is a link to a YouTube Video:</h2>
+		<a href="https://youtu.be/dQw4w9WgXcQ?si=CCLU3beio6qBgxid">Very Important</a>
+		<!-- number 9, have a link to social media or YouTube -->
+		<br> <br>
+
+
+		<h2>This is a Tiktok video:</h2>
+		<a href="https://www.tiktok.com/@idksterlingopp3/video/7597311654325439776?is_from_webapp=1&sender_device=pc">Very
+			Important</a> <!-- number 9, have a link to social media or YouTube -->
+		<br> <br>
+
+		<h2>This is a link to the Rhodes Library website:</h2>
+		<a href="https://www.ru.ac.za/library/">RU Library</a> <!-- number 4, intergrate absolute URLs -->
+		<br> <br>
+
+		<h2>This is a link to Taryn's instagram page:</h2>
+		<a href="https://www.instagram.com/tarynslittlepotofgold/">RU Library</a>
+		<!-- number 4, intergrate absolute URLs -->
+		<br> <br>
+
+
+		<h2>Below is an embedded pdf:</h2>
+		<embed width="100%" height="500px" src="randompdf.pdf"> <!-- number 9,  have HTML Plug-ins -->
+		<table>
+			<tr></tr>
+		</table>
+
+
+	</main>
+
+  <footer>
+    <p><em>Giant Library &#169 2026 Tech Giants, Inc. All rights reserved.</em></p>
+    <a class="navbutton" href="about.html">Contact Us</a>
+  </footer>
+
 </body>
+
 </html>

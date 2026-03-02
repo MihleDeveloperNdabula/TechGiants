@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Results - Giant Library</title>
+    <title id="title_title">Title - Giant Library</title>
     <link rel="icon" type="image/x-icon" href="Images/favicon.png">
 	<link rel="stylesheet" href="CSS/basicstyling.css">
-	<link rel="stylesheet" href="CSS/searchresults.css">
-	<script src="searchresults.js" defer></script>
-
+	<link rel="stylesheet" href="CSS/displaybook.css">
+	<script src="displaybook.js" defer></script>
+	
 </head>
 <body>
 
@@ -21,7 +21,7 @@
 			</form>
 			</li>
 			<li><a href="home.html">Home</a></li> <!-- number 4, integrating relative URLS-->
-			<li><a class="currentpage">Browse</a></li>
+			<li><a class="currentpage" href="browse.html">Browse</a></li>
 			<li><a href="login.html">Login</a></li>
 			<li><a href="signup.html">Sign Up</a></li>
 			<li><a href="about.html">About Us</a></li>
@@ -30,43 +30,27 @@
 		</ul>
 	</nav>
 
+
 	<header>
-	<h1>Search Results</h1>
+	<h1 id="title_heading">Title</h1>
+	<header>
 
-	<h2>Searched for:</h2>
-	</header>
-	
+		<div class="book_display">
+		</div>
 
-	<nav class="resultspagemenu" id="top_resultspagemenu">
-	<h4 id="num_displayed_top">Showing 1-10 of</h4>
-	<h3 id="num_results_top">__ results</h3>
-	   <button id="prev_top">Prev</button>
-	   
-		<div class="page_buttons_top"></div>
+		<div class="access_book">
+		<button>Read Online</button>
+		</div>
 
-	   <button id="next_top">Next</button>
-	</nav>
+		<div class="rating_display">
+			<h3>Reviews</h3>
+		</div>
 
-
-	<main>
-
-	<section class="search_results">
-	
- 	</section>
-
-
-	</main>
-
-<nav class="resultspagemenu" id="bottom_resultspagemenu">
-	<h4 id="num_displayed_bottom">Showing 1-10 of</h4>
-	<h3 id="num_results_bottom">__ results</h3>
-	   <button id="prev_bottom">Prev</button>
-	   <div class="page_buttons_bottom"></div>
-	   <button id="next_bottom">Next</button>
-	</nav>
+		<div class="similar_books">
+		<h3>More like this:</h3>
+		</div>
 
   <footer>
-
     <p><em>Giant Library &#169 2026 Tech Giants, Inc. All rights reserved.</em></p>
     <a class="navbutton" href="about.html">Contact Us</a>
   </footer>

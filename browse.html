@@ -5,11 +5,12 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Browse - Giant Library</title>
-	<link rel="icon" type="image/x-icon" href="randombook.png">
+	<link rel="icon" type="image/x-icon" href="Images/favicon.png">
 	<link rel="stylesheet" href="CSS/basicstyling.css">
 	</style>
 	<link rel="stylesheet" href="CSS/browse.css">
 	</style>
+	<script src="browse.js" defer></script>
 
 
 
@@ -20,7 +21,11 @@
 	<nav id="mainmenu">
 		<ul> <!-- number 7, having HTML lists (unordered list) -->
 			<li><img src="Images/logo.png" width=65 height=85 id="logo"></li>
-			<li><input type="search" placeholder="Search......"></li>
+			<li>
+			<form id="search_mainmenu" action="searchresults.html" method="get"> 
+			<input type="search" id="mainmenu_searchquery" name="mainmenu_searchquery" placeholder="Search......" required>
+			</form>
+			</li>
 			<li><a href="home.html">Home</a></li> <!-- number 4, integrating relative URLS-->
 			<li><a class="currentpage">Browse</a></li>
 			<li><a href="login.html">Login</a></li>
@@ -46,247 +51,42 @@
 
 		<main>
 
-			<form action="browse.html" method="get"> <!-- number 7, having HTML forms -->
+			<form id="basicsearch" action="searchresults.html" method="get"> <!-- number 7, having HTML forms -->
 				<label for="searchquery">Search:</label> <br>
 				<input type="text" id="searchquery" name="searchquery" required>
 				<button type="submit">&#128269;</button>
 			</form>
 
+			
+			<div class="popular_slideshow">	
 			<h2 id="popular">Popular</h2>
+			</div>
 
 
-			<table>
-				<tr>
-					<td>
-						<img src="Images/randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="Images/randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="Images/randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="Images/randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="Images/randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="Images/randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="Images/randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="Images/randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="Images/randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-				</tr>
-			</table>
-
+			<div class="new_slideshow">	
 			<h2 id="new">New</h2>
-			<table>
-				<tr>
-					<td>
-						<img src="Images/randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="Images/randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="Images/randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="Images/randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="Images/randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="Images/randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="Images/randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="Images/randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="Images/randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-				</tr>
-			</table>
+			</div>
+			
 
+			<div class="childrens_slideshow">
 			<h2 id="children">Children</h2>
+			</div>
 
 
-			<table>
-				<tr>
-					<td>
-						<img src="Images/randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="Images/randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="Images/randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="Images/randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="Images/randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="Images/randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="Images/randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="Images/randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="Images/randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-				</tr>
-			</table>
-
+			<div class="academic_slideshow">
 			<h2 id="academic">Academic</h2>
-
-
-			<table>
-				<tr>
-					<td>
-						<img src="randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-				</tr>
-			</table>
-
-			<h2 id="Save to wishlist">Wishlist</h2>
-
-
-			<table>
-				<tr>
-					<td>
-						<img src="randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-				</tr>
-			</table>
-			<h2 id="preview">Popular</h2>
-
-
-			<table>
-				<tr>
-					<td>
-						<img src="randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<img src="randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-					<td>
-						<img src="randombook.png" , width=300, height=300 class="bookimg">
-					</td>
-				</tr>
-			</table>
-
-
-
+			</div>
+			
+			
 		</main>
 	</section>
+
+  <footer>
+    <p><em>Giant Library &#169 2026 Tech Giants, Inc. All rights reserved.</em></p>
+    <a class="navbutton" href="about.html">Contact Us</a>
+  </footer>
+
+
 </body>
 
 </html>
