@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-item {
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+/* media queries requirement #10 */
+@media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}

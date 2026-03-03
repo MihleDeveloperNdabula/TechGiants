@@ -1,0 +1,35 @@
+.resultspagemenu {
+	text-align: center;
+}
+
+.coverimage {
+  float: left;
+  width: 50%;
+}
+
+.coverimage img {		/* width to height ratio is 2:3 */
+	width: 300px;
+	height: 450px;
+}
+
+.basicdetails {
+}
+
+.admindetails p{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.genredetails p{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.contentdetails {
+}
+
+.search_result_book:after {
+  content: "";
+  display: table;
+  clear: both;
+}

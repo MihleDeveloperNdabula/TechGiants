@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Tech Giants</title>
+    <link rel="icon" type="image/x-icon" href="Images/favicon.png">
     <link rel="stylesheet" type="text/css" href="CSS/basicstyling.css">
     <link rel="stylesheet" type="text/css" href="CSS/home.css">
 </head>
@@ -13,7 +14,11 @@
     <nav id="mainmenu">
         <ul class="inside-nav-bar"> <!-- number 7, having HTML lists (unordered list) -->
             <li><img src="Images/logo.png" width=65 height=85 id="logo"></li>
-            <li><input type="search" placeholder="Search......"></li>
+            <li>
+	    <form id="search_mainmenu" action="searchresults.html" method="get"> 
+	    <input type="search" id="mainmenu_searchquery" name="mainmenu_searchquery" placeholder="Search......" required>
+	    </form>
+	    </li>
             <li><a class="currentpage">Home</a></li> <!-- number 4, integrating relative URLS-->
             <li><a href="browse.html">Browse</a></li>
             <li><a href="login.html">Login</a></li>
@@ -59,11 +64,10 @@
 
 
 
-    <footer>
-        <p><em>Giant Libary &#169 2026 Tech Giants, Inc. All rights reserved.</em></p>
-        <a href="about.html">Contact Us</a>
-
-    </footer>
+  <footer>
+    <p><em>Giant Library &#169 2026 Tech Giants, Inc. All rights reserved.</em></p>
+    <a class="navbutton" href="about.html">Contact Us</a>
+  </footer>
 
 </body>
 
