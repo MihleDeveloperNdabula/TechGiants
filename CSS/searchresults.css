@@ -1,18 +1,17 @@
 .resultspagemenu {
 	text-align: center;
+
 }
 
 .coverimage {
-  float: left;
-  width: 50%;
+flex-shrink:1;
 }
 
-.coverimage img {		/* width to height ratio is 2:3 */
+.coverimage img {		
 	width: 300px;
 	height: 450px;
-}
-
-.basicdetails {
+	
+ 
 }
 
 .admindetails p{
@@ -23,13 +22,34 @@
 .genredetails p{
 	display: inline-block;
 	margin-right: 20px;
+	
 }
 
-.contentdetails {
-}
+.search_result_book{
+  display:flex;
+  flex-direction:row;
+  gap:20px;
+  border:1px solid black;
+  padding:10px;
+  margin-bottom:16px;
 
+}
 .search_result_book:after {
-  content: "";
-  display: table;
   clear: both;
+  display:flex;
+  border:1px solid black;
+  flex:wrap;
+}
+.book_text_details{
+  flex:1;
+  min-width:0;
+}
+.search_results{
+    background-color: #fff8ec;
+    border: 1px solid #4A3115;
+    border-radius: 8px;
+    padding: 20px 24px;
+    flex: 1;
+    min-width: 0;
+    position: relative; 
 }
