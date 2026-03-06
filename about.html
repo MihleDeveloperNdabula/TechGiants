@@ -8,22 +8,22 @@
 	<link rel="icon" type="image/x-icon" href="Images/favicon.png">
 	<link rel="stylesheet" href="CSS/basicstyling.css">
 	<link rel="stylesheet" href="CSS/about.css">
-	
+
 </head>
 
 <body>
 
-	<nav id = "mainmenu">
+	<nav id="mainmenu">
 		<ul>
-			<li><img src = "Images/logo.png" width = 65 height = 85 id = "logo"></li>
+			<li><img src="Images/logo.png" width=65 height=85 id="logo"></li>
 			<li>
-			<form id="search_mainmenu" action="searchresults.html" method="get"> 
-			<input type="search" id="mainmenu_searchquery" name="mainmenu_searchquery" placeholder="Search......" required>
-			</form>
+				<form id="search_mainmenu" action="searchresults.html" method="get">
+					<input type="search" id="mainmenu_searchquery" name="mainmenu_searchquery"
+						placeholder="Search......" required>
+				</form>
 			</li>
 			<li><a href="home.html">Home</a></li> <!-- number 4, integrating relative URLS-->
 			<li><a href="browse.html">Browse</a></li>
-			<li><a href="login.html">Login</a></li>
 			<li><a href="signup.html">Sign Up</a></li>
 			<li><a class="currentpage">About Us</a></li>
 			<li><a href="feedback.html">Give Us Feedback</a></li>
@@ -33,80 +33,37 @@
 	<main>
 
 		<!-- number 7, having HTML tables -->
-
-		<table class="abtTbl">
-			<tr>
-				<h2>The Team</h2>
-			</tr>
-			<tr class="trTop">
-				<td>
-					<img src="Images/team/kt.jpg" , width=320, height=320>
-				</td>
-				<td>
-					<img src="Images/team/ndemo.jpeg" , width=320, height=320>
-				</td>
-				<td>
-					<img src="Images/team/mihle.jpg" , width=320, height=320>
-				</td>
-				<td>
-					<img src="Images/team/olothando.png" , width=320, height=320>
-				</td>
-				<td>
-					<img src="Images/team/taryn.jpeg" , width=320, height=320>
-				</td>
-			</tr>
-			<tr class="trTop">
-				<td width=400>
-					<h3>Nkateko Maringa</h3>
-				</td>
-				<td width=400>
-					<h3>Ndemogbe Juana</h3>
-
-				</td>
-				<td width=400>
-					<h3>Mihle Ndabula</h3>
-
-				</td>
-				<td width=400>
-					<h3>Olothando Hem</h3>
-				</td>
-				<td width=400>
-					<h3>Taryn Brown</h3>
-				</td>
-			</tr>
-			<tr class="abtTbl">
-				<td width=400>
-					<p class="abtText">
-						A skilled front-end developer and one of two creative architects behind our degital library's
-						visual experience.
-					</p>
-				</td>
-				<td width=400>
-					<p class="abtText">
-						A versatile full-stack developer who dedicates his time to the seamless integration and clean
-						communication between front-end and back-end systems.
-					</p>
-				</td>
-				<td width=400>
-					<p class="abtText">
-						An expert Front-End Developer and the second half of our creative architects, pivotal to
-						bringing life to the Tech Giants Library.
-					</p>
-				</td>
-				<td width=400>
-					<p class="abtText">
-						A dedicated Back-End Developer who alongside his duo works meticulously to ensure powerful and
-						secure databases for a smooth library experience.
-					</p>
-				</td>
-				<td width=400>
-					<p class="abtText">
-						A Back-End specialist who makes up the other half of the duo ensuring powerful databases, high
-						security and ensuring user request is processed with speed and precision. </p>
-				</td>
-			</tr>
-
-		</table>
+		<section id="about">
+			<p>
+				<img src="Images/team/kt.jpg" width=320 height=320><br>
+			Nkateko Maringa<br>
+			A skilled front-end developer and one of two creative architects behind our degital library's
+			visual experience.
+			</p>
+			<p>
+				<img src="Images/team/ndemo.jpeg" width=320 height=320><br>
+			Ndemogbe Juana<br>
+			A versatile full-stack developer who dedicates his time to the seamless integration and clean
+			communication between front-end and back-end systems.
+			</p>
+			<p>
+				<img src="Images/team/mihle.jpg" width=320 height=320><br>
+			Mihle Ndabula<br>
+			An expert Front-End Developer and the second half of our creative architects, pivotal to
+			bringing life to the Tech Giants Library.
+			</p>
+			<p>
+				<img src="Images/team/olothando.png" width=320 height=320><br>
+			Olothando Hem<br>
+			A dedicated Back-End Developer who alongside his duo works meticulously to ensure powerful and
+			secure databases for a smooth library experience.
+			</p>
+			<p>
+				<img src="Images/team/taryn.jpeg" width=320 height=320><br>
+			Taryn Brown<br>
+			A Back-End specialist who makes up the other half of the duo ensuring powerful databases, high
+			security and ensuring user request is processed with speed and precision. </p>
+		</section>
 
 
 		<section id="contact">
@@ -128,10 +85,10 @@
 		</section>
 	</main>
 
-  <footer>
-    <p><em>Giant Library &#169 2026 Tech Giants, Inc. All rights reserved.</em></p>
-    <a class="navbutton" href="about.html">Contact Us</a>
-  </footer>
+	<footer>
+		<p><em>Giant Library &#169 2026 Tech Giants, Inc. All rights reserved.</em></p>
+		<a class="navbutton" href="about.html">Contact Us</a>
+	</footer>
 
 </body>
 

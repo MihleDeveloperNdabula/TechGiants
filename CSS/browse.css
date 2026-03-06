@@ -1,13 +1,16 @@
 
 #browseBlocks{
-     display: grid;
-     grid-template-columns: 250px 1fr;
+    margin-top : 30px;
+    margin-right : 100px;
+    margin-left : 100px;
+    display: grid;
+    grid-template-columns: 250px 1fr;
 }
 
 #browseHeader {
   background-image: linear-gradient(to bottom,#291B0B, #e4b988);
   color: white;
-  height: 2000px;
+  height: 2500px;
   width: 200px;
 }
 

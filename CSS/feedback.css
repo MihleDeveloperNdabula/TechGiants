@@ -22,3 +22,14 @@
 }
 
 
+#feedbackBox{
+    margin-top : 30px;
+    margin-left : 600px;
+    margin-right : 600px;
+    margin-bottom: 30px;
+    padding : 20px;
+    background-image: radial-gradient(#fdf2e1,#FDF3D8);
+    border : solid 1px;
+    background-color: #291B0B;
+    border-radius: 2%;
+}

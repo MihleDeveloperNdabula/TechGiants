@@ -1,3 +1,6 @@
+body{
+    margin : 0px;
+}
 #logo{
     padding-right : 20px;
     padding-left : 20px;
@@ -5,7 +8,9 @@
 body {			/* sets the overall appearance of the page */		
     font-family: Arial, Helvetica, sans-serif;
 	height:100%;
-	background-image:radial-gradient(#fff3e1,#F2AB58);
+	background-image:url("../Images/back.png");
+    background-attachment: fixed;
+
 }
 
 header, main, footer {			/*only thing that isnt padded, i.e. will touch the sides of the screen, is #mainmenu which is placed outside of the three main sections, between header and main */
@@ -24,6 +29,8 @@ footer {
 #mainmenu {			/* this is the nav element that contains the main menu */
 	position: sticky;
 	top: 0;
+    margin : 0px;
+    z-index: 2;
 }
 
 #mainmenu ul{			/* this is being used for the nav menu at the top - should really be specific to a nav or menu class*/
@@ -35,6 +42,7 @@ footer {
     list-style: none;
     overflow: hidden;
     background-image: linear-gradient(to right,#291B0B, #4A3115);
+    margin : 0px;
 }
 
 
@@ -45,6 +53,7 @@ footer {
     text-align: center;
     padding: 15px 20px;
     text-decoration: none;
+    margin : 0px;
     top: 0;
 }
 
@@ -85,4 +94,10 @@ a.navbutton:active{
 
 .bookcover {
 	aspect-ratio: 2 / 3;
+}
+
+footer{
+    color : white;
+    bottom : 0;
+    background-image: linear-gradient(to right,#291B0B, #4A3115);
 }
