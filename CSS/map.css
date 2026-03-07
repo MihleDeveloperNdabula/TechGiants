@@ -1,68 +1,69 @@
-body{
-margin:0;
+body {
+	margin: 0;
 }
 
-#water{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-background: radial-gradient(rgb(20,255,196),rgb(112,193,255));
+#water {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: radial-gradient(rgb(20, 255, 196), rgb(112, 193, 255));
 }
 
 /* Map container */
-#map{
-position:relative;
-width:90vw;
-max-width:1200px;
-aspect-ratio: 16 / 9;   /* Keeps shape consistent */
+#map {
+	position: relative;
+	width: 90vw;
+	max-width: 1200px;
+	aspect-ratio: 16 / 9;
+	/* Keeps shape consistent */
 }
 
 /* continent images */
-.continent{
-position:absolute;
-transition:0.3s;
+.continent {
+	position: absolute;
+	transition: 0.3s;
 }
 
-.continent:hover{
-filter:brightness(50%);
-transform:scale(1.05);
+.continent:hover {
+	filter: brightness(50%);
+	transform: scale(1.05);
 }
 
 /* continent placement */
 
-#na{
-width:22%;
-top:18%;
-left:8%;
+#na {
+	width: 22%;
+	top: 18%;
+	left: 8%;
 }
 
-#europe{
-width:12%;
-top:18%;
-left:42%;
+#europe {
+	width: 12%;
+	top: 18%;
+	left: 42%;
 }
 
-#asia{
-width:32%;
-top:12%;
-left:50%;
+#asia {
+	width: 32%;
+	top: 12%;
+	left: 50%;
 }
 
-#sam{
-width:14%;
-top:55%;
-left:19%;
+#sam {
+	width: 14%;
+	top: 55%;
+	left: 19%;
 }
 
-#africa{
-width:18%;
-top:40%;
-left:38%;
+#africa {
+	width: 18%;
+	top: 40%;
+	left: 38%;
 }
 
-#aus{
-width:14%;
-top:62%;
-left:72%;
+#aus {
+	width: 14%;
+	top: 62%;
+	left: 72%;
 }
