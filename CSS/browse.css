@@ -1,14 +1,13 @@
-
-#browseBlocks{
-    margin-top : 30px;
-    margin-right : 100px;
-    margin-left : 100px;
-    display: grid;
-    grid-template-columns: 250px 1fr;
+#browseBlocks {
+  margin-top: 30px;
+  margin-right: 100px;
+  margin-left: 100px;
+  display: flex;
+  align-items:stretch;
 }
 
 #browseHeader {
-  background-image: linear-gradient(to bottom,#291B0B, #e4b988);
+  background-image: linear-gradient(to bottom, #291B0B, #e4b988);
   color: white;
   height: 2500px;
   width: 200px;
@@ -44,11 +43,6 @@
   padding-left: 15px;
 }
 
-main {
-  padding: 30px;
-
-}
-
 .basicsearch form {
   margin-bottom: 30px;
 }
@@ -62,16 +56,17 @@ h2 {
   margin: 10px 0 15px 0;
   border-bottom: 2px solid #ddd;
   padding-bottom: 5px;
-  clear:both;
+  clear: both;
 }
 
-main {
+#browsemain {
+  padding: 30px;
   background: #fff3e1;
-  border-radius: 20px 0 0 20px;
-  box-shadow: -5px 0 20px rgba(0,0,0,0.05);
-  height: 2000px;
-     display: grid;
-     grid-template-rows: 0.1fr repeat(4, 2fr);
+  
+  box-shadow: -5px 0 20px rgba(0, 0, 0, 0.05);
+  display: grid;
+  flex:1;
+  grid-template-rows: 0.1fr repeat(4, 2fr);
 }
 
 
@@ -90,7 +85,7 @@ main {
 .academic_slide {
   display: flex;
   width: 100%;
-  gap: 10px;
+  gap: 10%;
 }
 
 .popular_slide form,
@@ -98,7 +93,8 @@ main {
 .childrens_slide form,
 .academic_slide form {
   flex: 1;
-  aspect-ratio: 2 / 3;   /* book shape */
+  aspect-ratio: 2 / 3;
+  /* book shape */
   padding: 0;
   border: none;
   background: none;
@@ -109,7 +105,8 @@ main {
 .childrens_slide button,
 .academic_slide button {
   height: 95%;
-  aspect-ratio: 2 / 3;   /* book shape */
+  aspect-ratio: 2 / 3;
+  /* book shape */
   padding: 0;
   border: none;
   background: none;
@@ -122,7 +119,8 @@ main {
   display: inline;
 }
 
-.prev, .next {
+.prev,
+.next {
   cursor: default;
   top: 50%;
   width: auto;
@@ -136,10 +134,7 @@ main {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
-
-
-
-

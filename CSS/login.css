@@ -1,16 +1,34 @@
-#signArea {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 #loginBox {
+    
     margin-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: auto;
+    margin-right:auto;
     padding: 75px;
     background-image: radial-gradient(#fdf2e1, #FDF3D8);
     border: solid 1px;
     background-color: #291B0B;
     border-radius: 2%;
+
+    align-items:center;
+    display:flex;
+    justify-content:center;
+    box-sizing:border-box;
+    
+}
+
+#loginBox form{
+    width:100%;
+    box-sizing:"border-box";
+}
+
+#loginBox input{
+    width:100%;
+    box-sizing:"border-box";
+    margin-bottom:10px;
+}
+
+#loginBox button{
+    width:100%;
+    box-sizing:"border-box";
 }

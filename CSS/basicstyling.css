@@ -5,33 +5,34 @@
 html,
 body {			/* sets the overall appearance of the page */		
     font-family: Arial, Helvetica, sans-serif;
-	height:100%;
-	background-image:url("../Images/back.png");
+    height: 100%;
+    background-image: url("../Images/back.png");
     background-attachment: fixed;
     margin : 0px;
 }
 
-header, main, footer {			/*only thing that isnt padded, i.e. will touch the sides of the screen, is #mainmenu which is placed outside of the three main sections, between header and main */
-	padding: 25px;
+header,
+main,
+footer {
+    /*only thing that isnt padded, i.e. will touch the sides of the screen, is #mainmenu which is placed outside of the three main sections, between header and main */
+    padding: 25px;
 }
 
 header {
-	text-align: center;
+    text-align: center;
 }
 
-footer {
-	text-align: center;
-	font-family: serif;
-}
 
-#mainmenu {			/* this is the nav element that contains the main menu */
-	position: sticky;
-	top: 0;
-    margin : 0px;
+#mainmenu {
+    /* this is the nav element that contains the main menu */
+    position: sticky;
+    top: 0;
+    margin: 0px;
     z-index: 2;
 }
 
-#mainmenu ul{			/* this is being used for the nav menu at the top - should really be specific to a nav or menu class*/
+#mainmenu ul {
+    /* this is being used for the nav menu at the top - should really be specific to a nav or menu class*/
     padding: 12px;
     display: flex;
     flex-wrap: wrap;
@@ -39,63 +40,72 @@ footer {
     align-items: center;
     list-style: none;
     overflow: hidden;
-    background-image: linear-gradient(to right,#291B0B, #4A3115);
-    margin : 0px;
+    background-image: linear-gradient(to right, #291B0B, #4A3115);
+    margin: 0px;
 }
 
 
-#mainmenu li a{			/* descendant combinator - all link (a) elements that occur within a list item within mainmenu nav */
+#mainmenu li a {
+    /* descendant combinator - all link (a) elements that occur within a list item within mainmenu nav */
     align-items: center;
     display: block;
     color: white;
     text-align: center;
     padding: 15px 20px;
     text-decoration: none;
-    margin : 0px;
+    margin: 0px;
     top: 0;
 }
 
-#mainmenu a:hover{		
+#mainmenu a:hover {
     background-color: white;
     color: black;
 }
 
-#mainmenu a.currentpage{			/* changes appearance of link element that is for current page using custom class */
-    background-image:radial-gradient(#E8CEB0,#D98F3D);
+#mainmenu a.currentpage {
+    /* changes appearance of link element that is for current page using custom class */
+    background-image: radial-gradient(#E8CEB0, #D98F3D);
     color: black;
 }
 
-#mainmenu a:active{		/* changes item to grey as user clicks on it */
+#mainmenu a:active {
+    /* changes item to grey as user clicks on it */
     background-color: grey;
     color: black;
 }
 
 a.navbutton {
-	font-family: Arial, Helvetica, sans-serif;
-    	display: inline-block;
-    	color: white;
-	background-color: black;
-    	text-align: center;
-    	padding: 15px 20px;
-    	text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
 }
 
-a.navbutton:hover{
+a.navbutton:hover {
     background-color: white;
     color: black;
 }
 
-a.navbutton:active{
+a.navbutton:active {
     background-color: grey;
     color: black;
 }
 
 .bookcover {
-	aspect-ratio: 2 / 3;
+    aspect-ratio: 2 / 3; 
 }
 
-footer{
-    color : white;
-    bottom : 0;
-    background-image: linear-gradient(to right,#291B0B, #4A3115);
+
+main{
+    flex:1;
+}
+
+footer {
+    text-align: center;
+    font-family: serif;
+    color: white;
+    background-image: linear-gradient(to right, #291B0B, #4A3115);
 }
