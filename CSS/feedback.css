@@ -1,35 +1,63 @@
+/* feedback page */
 
-/*feedback page*/
-
-
-#details{
+#details {
     width: 40%;
-    margin:40px auto;
-    display: flex; /*flexbox requirement #7*/
+    max-width: 600px;
+    margin: 40px auto;
+    display: flex;
     flex-direction: column;
     gap: 12px;
 }
-#details button{
+
+#details input {
+    padding: 8px 12px;
+    border: 1px solid #4A3115;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#details input:focus {
+    outline: none;
+    border-color: #D98F3D;
+    box-shadow: 0 0 0 2px rgba(217, 143, 61, 0.3);
+}
+
+#details button {
     width: 120px;
     margin: 15px auto 0 auto;
-    padding: 8px;
+    padding: 10px 8px;
     cursor: pointer;
-
+    background-image: linear-gradient(to right, #291B0B, #4A3115);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
 }
 
-#details input{
-    padding: 8px;
+#details button:hover {
+    background-image: radial-gradient(#E8CEB0, #D98F3D);
+    color: black;
 }
 
+#details button:active {
+    background-color: grey;
+    background-image: none;
+    color: black;
+}
 
-#feedbackBox{
-    margin-top : 30px;
-    margin-left : 600px;
-    margin-right : 600px;
-    margin-bottom: 30px;
-    padding : 20px;
-    background-image: radial-gradient(#fdf2e1,#FDF3D8);
-    border : solid 1px;
-    background-color: #291B0B;
-    border-radius: 2%;
+#feedbackBox {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 40px;
+    background-image: radial-gradient(#fdf2e1, #FDF3D8);
+    border: solid 1px #4A3115;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
