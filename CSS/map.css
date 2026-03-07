@@ -37,22 +37,28 @@ top:18%;
 left:8%;
 }
 
-#eurasia{
-width:40%;
+#europe{
+width:12%;
+top:18%;
+left:42%;
+}
+
+#asia{
+width:32%;
 top:12%;
-left:36%;
+left:50%;
 }
 
 #sam{
 width:14%;
-top:50%;
-left:22%;
+top:55%;
+left:19%;
 }
 
 #africa{
 width:18%;
-top:42%;
-left:48%;
+top:40%;
+left:38%;
 }
 
 #aus{
