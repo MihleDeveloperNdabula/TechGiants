@@ -1,0 +1,208 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f1ebd9; /* Fallback matching your peach theme */
+}
+
+#browseBlocks {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    min-height: 100vh; /* Ensures the sidebar always stretches to the bottom */
+}
+#browseHeader img {
+    width: 125px;
+    display: flex;
+    -ms-flex-align: center;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
+#browseHeader {
+    background-image: linear-gradient(to bottom, #291B0B, #e4b988);
+    color: white;
+    padding: 20px;
+}
+
+#browseHeader h1 {
+    color: white;
+    font-size: 28px;
+    margin-top: 0;
+}
+
+#browseHeader ul {
+    list-style: none;
+    margin-top: 20px;
+    padding-left: 0;
+}
+
+#browseHeader li {
+    margin-bottom: 12px;
+}
+
+#browseHeader a {
+    color: #cbd5e1;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+#browseHeader a:hover {
+    background: #334155;
+    color: white;
+    padding-left: 15px;
+}
+
+#logo {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    max-width: 1200px;
+}
+
+.page-header h1 {
+    margin-top: 0;
+    color: #291B0B;
+}
+.form-card {
+    background: #f3bc7cfd;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+}
+
+.form-card h3 {
+    margin-top: 0;
+    color: #291B0B;
+    border-bottom: 2px solid #e4b988;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.card-legend {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* 2-Column Grid for Inputs */
+.input-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.form-card input[type="text"],
+.form-card input[type="number"],
+.form-card select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border 0.3s;
+}
+
+.form-card input:focus,
+.form-card select:focus {
+    border-color: #291B0B;
+    outline: none;
+}
+
+.radio-group {
+    justify-content: center;
+}
+
+.radio-label {
+    font-weight: normal !important;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.error-text {
+    color: #d9534f;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+
+.checkbox-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.columns {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 200px;
+}
+
+.columns h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.columns label {
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #555;
+}
+
+
+.form-actions {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.btn-primary {
+    background-color: #291B0B;
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #4a3318;
+}
