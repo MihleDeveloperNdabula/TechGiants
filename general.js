@@ -15,7 +15,7 @@ function genWally() {
     wally.style.zIndex = 5;
 
     document.body.appendChild(wally);
-    
+    wally.addEventListener("click", clickWally);
 
 }
 
@@ -50,13 +50,10 @@ function clickWally(){
         text.style.opacity = 0;
     }, 50); // small delay ensures transition works
 
-    // Remove message from DOM after fade
-    //text.parentNode.removeChild(text);
-
 }
 
 window.onload = genWally;
-document.addEventListener("click", clickWally);
+
 
 // function clickWally(){
 
