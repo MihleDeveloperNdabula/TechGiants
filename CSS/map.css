@@ -1,0 +1,62 @@
+body{
+margin:0;
+}
+
+#water{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background: radial-gradient(rgb(20,255,196),rgb(112,193,255));
+}
+
+/* Map container */
+#map{
+position:relative;
+width:90vw;
+max-width:1200px;
+aspect-ratio: 16 / 9;   /* Keeps shape consistent */
+}
+
+/* continent images */
+.continent{
+position:absolute;
+transition:0.3s;
+}
+
+.continent:hover{
+filter:brightness(50%);
+transform:scale(1.05);
+}
+
+/* continent placement */
+
+#na{
+width:22%;
+top:18%;
+left:8%;
+}
+
+#eurasia{
+width:40%;
+top:12%;
+left:36%;
+}
+
+#sam{
+width:14%;
+top:50%;
+left:22%;
+}
+
+#africa{
+width:18%;
+top:42%;
+left:48%;
+}
+
+#aus{
+width:14%;
+top:62%;
+left:72%;
+}
