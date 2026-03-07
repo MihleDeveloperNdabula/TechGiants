@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Catalog Management - Tech Giants Library</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="Images/favicon.png">
+    <link rel="stylesheet" href="CSS/basicstyling.css">
+    <link rel="stylesheet" href="CSS/catMan.css">
+    <link rel="stylesheet" href="CSS/management.css">
+</head>
+<body>
+    <div id="browseBlocks">
+        
+        <header id="browseHeader">
+            <h1>Browse</h1>
+            <ul id="sidebar"> 
+                <li><img src="Images/logo.png" width="65" height="85" id="logo" alt="Library Logo"></li>
+                <li><a href="admin.html">Admin</a></li>
+                <li><a href="userMan.html">User Management</a></li>
+                <li><a href="orderMan.html">Order Management</a></li>
+            </ul>
+        </header>
+        
+        <div id="mainContentWrapper">
+            
+            <header class="container page-header">
+                <h1>Catalog Management</h1>
+            </header>
+            
+            <main>
+                <div class="container">
+                    
+                    <section>
+                        <form id="add_book_form" action="add_book.php" method="post">
+                            
+                            <div class="form-card">
+                                <h3>Add New Item</h3>
+                                <legend class="card-legend">Basic Book Info</legend>
+                                
+                                <div class="input-grid">
+                                    <div class="input-group">
+                                        <label for="title">Title:</label>
+                                        <input required type="text" id="title" name="title" placeholder="e.g. The Silent Patient"> 
+                                    </div>
+                                    
+                                    <div class="input-group">
+                                        <label for="author">Author:</label>
+                                        <input required type="text" id="author" name="author" placeholder="e.g. Alex Michaelides"> 
+                                    </div>
+                                    
+                                    <div class="input-group">
+                                        <label for="isbn">ISBN code:</label>
+                                        <input required type="text" id="isbn" name="isbn" placeholder="978-1-234-56789-0"> 
+                                        <p id="isbn_error" class="error-text"></p>
+                                    </div>
+                                    
+                                    <div class="input-group">
+                                        <label for="publish_date">Published Date (Year):</label>
+                                        <input required type="number" placeholder="YYYY" min="1000" max="2026" id="publish_date" name="publish_date">
+                                    </div>
+                                    
+                                    <div class="input-group">
+                                        <label for="language">Language:</label>
+                                        <select required id="language" name="language">
+                                            <option value="any_language">Any</option>
+                                            <option value="english">English</option>
+                                            <option value="xhosa">isiXhosa</option>
+                                            <option value="afrikaans">Afrikaans</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="input-group">
+                                        <label for="page">Number of pages:</label>
+                                        <input required type="number" id="page" name="page" min="1">
+                                    </div>
+
+                                    <div class="input-group radio-group">
+                                        <label>Format:</label><br>
+                                        <label for="fiction" class="radio-label">
+                                            <input type="radio" id="fiction" name="book_type" value="fiction" required> Fiction
+                                        </label>
+                                        <label for="non-fiction" class="radio-label">
+                                            <input type="radio" id="non-fiction" name="book_type" value="non-fiction"> Non-fiction
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-card">
+                                <legend class="card-legend">Genres & Tropes</legend>
+                                
+                                <div class="checkbox-columns">
+                                    <div class="columns">
+                                        <h4>Genre:</h4>
+                                        <label><input type="checkbox" name="genres[]" value="mystery"> Mystery</label>
+                                        <label><input type="checkbox" name="genres[]" value="romance"> Romance</label>
+                                        <label><input type="checkbox" name="genres[]" value="action"> Action</label>
+                                        <label><input type="checkbox" name="genres[]" value="horror"> Horror</label>
+                                        <label><input type="checkbox" name="genres[]" value="classics"> Classics</label>
+                                        <label><input type="checkbox" name="genres[]" value="textbook"> Textbook</label>
+                                        <label><input type="checkbox" name="genres[]" value="scifi"> Science Fiction</label>
+                                        <label><input type="checkbox" name="genres[]" value="hisfic"> Historical Fiction</label>
+                                        <label><input type="checkbox" name="genres[]" value="realfic"> Realistic Fiction</label>
+                                        <label><input type="checkbox" name="genres[]" value="ya"> Young Adult</label>
+                                        <label><input type="checkbox" name="genres[]" value="fantasy"> Fantasy</label>
+                                    </div>
+                                    
+                                    <div class="columns">
+                                        <h4>Tropes:</h4>
+                                        <label><input type="checkbox" name="tropes[]" value="chosen_one"> Chosen one</label>
+                                        <label><input type="checkbox" name="tropes[]" value="enemies_to_lovers"> Enemies to lovers</label>
+                                        <label><input type="checkbox" name="tropes[]" value="found_family"> Found family</label>
+                                        <label><input type="checkbox" name="tropes[]" value="friends_to_lovers"> Friends to lovers</label>
+                                        <label><input type="checkbox" name="tropes[]" value="coming_of_age"> Coming of age</label>
+                                        <label><input type="checkbox" name="tropes[]" value="love_triangle"> Love triangle</label>
+                                        <label><input type="checkbox" name="tropes[]" value="whodunnit"> Whodunnit</label>
+                                        <label><input type="checkbox" name="tropes[]" value="miscommunication"> Miscommunication</label>
+                                        <label><input type="checkbox" name="tropes[]" value="strong_female_friendships"> Strong female friendship</label>
+                                        <label><input type="checkbox" name="tropes[]" value="bromance"> Bromance</label>
+                                        <label><input type="checkbox" name="tropes[]" value="animals_as_characters"> Animals as characters</label>
+                                        <label><input type="checkbox" name="tropes[]" value="fresh_start"> Fresh start</label>
+                                    </div>
+                                    
+                                    <div class="columns">
+                                        <h4>Additional features:</h4>
+                                        <label><input type="checkbox" name="features[]" value="standalone"> Standalone</label>
+                                        <label><input type="checkbox" name="features[]" value="series"> Part of a series</label>
+                                        <label><input type="checkbox" name="features[]" value="firstperson"> 1st person narrator</label>
+                                        <label><input type="checkbox" name="features[]" value="multipov"> Multi POV</label>
+                                        <label><input type="checkbox" name="features[]" value="lgbtq"> LGBTQ+</label>
+                                        <label><input type="checkbox" name="features[]" value="poc_author"> PoC author</label>
+                                        <label><input type="checkbox" name="features[]" value="disability_rep"> Disability representation</label>
+                                        <label><input type="checkbox" name="features[]" value="dystopia"> Dystopia</label>
+                                        <label><input type="checkbox" name="features[]" value="magical_realism"> Magical realism</label>
+                                        <label><input type="checkbox" name="features[]" value="unreliable_narrator"> Unreliable narrator</label>
+                                        <label><input type="checkbox" name="features[]" value="cliffhanger"> Cliffhanger ending</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-actions">
+                                    <button type="submit" class="btn-primary">Add Book to Catalog</button>
+                                </div>
+                            </div>
+                            
+                        </form>
+                    </section>
+                    
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
