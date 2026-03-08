@@ -1,15 +1,15 @@
-
 body {
     margin: 0;
     padding: 0;
-    background-color: #f1ebd9; /* Fallback matching your peach theme */
+    background-color: #f1ebd9;
 }
 
 #browseBlocks {
     display: grid;
     grid-template-columns: auto 1fr;
-    min-height: 100vh; /* Ensures the sidebar always stretches to the bottom */
+    min-height: 100vh;
 }
+
 #browseHeader img {
     width: 125px;
     display: flex;
@@ -73,11 +73,13 @@ body {
     margin-top: 0;
     color: #291B0B;
 }
+
 .form-card {
-    background: #f3bc7cfd;
+    background-image: radial-gradient(#fdf2e1, #FDF3D8);
     padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: solid 1px #4A3115;
+    border-radius: 8px;
+    box-sizing: border-box;
     margin-bottom: 30px;
 }
 

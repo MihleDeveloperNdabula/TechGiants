@@ -9,7 +9,7 @@ function genWally() {
 
     wally.style.position = "absolute";
     wally.style.width = "2.5%";
-    wally.style.opacity = "50%"
+    wally.style.opacity = "30%"
     wally.style.left = fromLeft + "px";
     wally.style.top = fromTop + "px";
     wally.style.zIndex = 5;
