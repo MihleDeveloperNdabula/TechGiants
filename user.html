@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="Images/favicon.png">
+    <link rel="stylesheet" href="CSS/basicstyling.css">
+    <link rel="stylesheet" href="CSS/catMan.css">
+    <link rel="stylesheet" href="CSS/management.css">
+    <link rel="stylesheet" href="CSS/user.css">
+    <title>User Dashboard</title>
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <div class="top-nav">
+        <div class="nav-left">
+            <img src="Images/logo.png" width="50" height="65" id="nav-logo" alt="Library Logo">
+            <h2>Library System</h2>
+        </div>
+        <div class="nav-right">
+            <a href="browse.html" class="nav-btn browse-btn">Browse Catalog</a>
+            <a href="login.html" class="nav-btn logout-btn">Logout</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="user-header">
+            <h1>My Library Dashboard</h1>
+            <p class="welcome-message">Welcome back, [Username]!</p>
+        </div>
+
+        <!-- Stats Cards - Dynamic from database -->
+        <div class="user-stats">
+            <div class="stat-card">
+                <h3>Total Books Read</h3>
+                <p class="stat-number" id="totalBooksRead">0</p>
+                <p class="stat-label">Lifetime total</p>
+            </div>
+            <div class="stat-card">
+                <h3>Currently Borrowed</h3>
+                <p class="stat-number" id="currentlyBorrowed">0</p>
+                <p class="stat-label" id="dueInfo">Books checked out</p>
+            </div>
+            <div class="stat-card">
+                <h3>Reading History</h3>
+                <p class="stat-number" id="readingHistory">0</p>
+                <p class="stat-label">Unique books read</p>
+            </div>
+        </div>
+
+        <!-- Continue Reading Section - Dynamic from database -->
+        <h2 class="section-title">Continue Reading</h2>
+        <div class="continue-reading" id="continueReadingSection" style="display: none;">
+            <div class="book-cover" id="continueCover">📖</div>
+            <div class="book-info">
+                <h4 id="continueTitle">Book Title</h4>
+                <p class="author" id="continueAuthor">Author Name</p>
+                <div class="progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill" style="width: 0%"></div>
+                    </div>
+                    <div class="progress-text" id="progressText">0% complete</div>
+                </div>
+            </div>
+            <button class="continue-btn" id="continueBtn">Continue Reading</button>
+        </div>
+        <div class="empty-state" id="noContinueBook">
+            <p>No books in progress. <a href="browse.html">Browse catalog</a> to start reading!</p>
+        </div>
+
+        <!-- Currently Borrowed Section - Dynamic from database -->
+        <h2 class="section-title">Currently Borrowed</h2>
+        <div class="book-grid" id="borrowedBooks">
+            <!-- Books will be populated here from database -->
+            <div class="empty-state">
+                <p>No books currently borrowed. <a href="browse.html">Browse catalog</a> to borrow books!</p>
+            </div>
+        </div>
+
+        <!-- Reading History Section - Dynamic from database -->
+        <h2 class="section-title">Reading History</h2>
+        <div class="book-grid" id="readingHistoryBooks">
+            <!-- Books will be populated here from database -->
+            <div class="empty-state">
+                <p>Your reading history will appear here. Start reading to build your history!</p>
+            </div>
+        </div>
+        
+        <div class="view-all">
+            <a href="#" id="viewAllHistory">View Complete Reading History →</a>
+        </div>
+    </div>
+
+    <!-- Template for book cards (hidden, used for JavaScript) -->
+    <template id="bookCardTemplate">
+        <div class="book-card">
+            <div class="book-cover">📚</div>
+            <div class="book-details">
+                <h4 class="book-title">Title</h4>
+                <p class="book-author">Author</p>
+                <div class="meta">
+                    <span class="book-date">Date</span>
+                    <span class="status-badge">Status</span>
+                </div>
+            </div>
+        </div>
+    </template>
+</body>
+</html>
