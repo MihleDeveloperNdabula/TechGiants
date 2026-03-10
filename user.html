@@ -11,7 +11,7 @@
     <title>User Dashboard</title>
 </head>
 <body>
-    <!-- Top Navigation Bar -->
+   
     <div class="top-nav">
         <div class="nav-left">
             <img src="Images/logo.png" width="50" height="65" id="nav-logo" alt="Library Logo">
@@ -23,14 +23,14 @@
         </div>
     </div>
 
-    <!-- Main Content -->
+    
     <div class="main-content">
         <div class="user-header">
             <h1>My Library Dashboard</h1>
             <p class="welcome-message">Welcome back, [Username]!</p>
         </div>
 
-        <!-- Stats Cards - Dynamic from database -->
+ 
         <div class="user-stats">
             <div class="stat-card">
                 <h3>Total Books Read</h3>
@@ -49,7 +49,7 @@
             </div>
         </div>
 
-        <!-- Continue Reading Section - Dynamic from database -->
+       
         <h2 class="section-title">Continue Reading</h2>
         <div class="continue-reading" id="continueReadingSection" style="display: none;">
             <div class="book-cover" id="continueCover">📖</div>
@@ -69,19 +69,19 @@
             <p>No books in progress. <a href="browse.html">Browse catalog</a> to start reading!</p>
         </div>
 
-        <!-- Currently Borrowed Section - Dynamic from database -->
+        
         <h2 class="section-title">Currently Borrowed</h2>
         <div class="book-grid" id="borrowedBooks">
-            <!-- Books will be populated here from database -->
+           
             <div class="empty-state">
                 <p>No books currently borrowed. <a href="browse.html">Browse catalog</a> to borrow books!</p>
             </div>
         </div>
 
-        <!-- Reading History Section - Dynamic from database -->
+     
         <h2 class="section-title">Reading History</h2>
         <div class="book-grid" id="readingHistoryBooks">
-            <!-- Books will be populated here from database -->
+           
             <div class="empty-state">
                 <p>Your reading history will appear here. Start reading to build your history!</p>
             </div>
@@ -92,7 +92,6 @@
         </div>
     </div>
 
-    <!-- Template for book cards (hidden, used for JavaScript) -->
     <template id="bookCardTemplate">
         <div class="book-card">
             <div class="book-cover">📚</div>
