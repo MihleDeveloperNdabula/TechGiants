@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1ebd9;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+
+.top-nav {
+    background-image: linear-gradient(to bottom, #291B0B, #e4b988);
+    color: white;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-left h2 {
+    color: white;
+    font-size: 24px;
+    margin: 0;
+}
+
+#nav-logo {
+    border-radius: 4px;
+}
+
+.nav-right {
+    display: flex;
+    gap: 15px;
+}
+
+.nav-btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.browse-btn {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.browse-btn:hover {
+    background: white;
+    color: #291B0B;
+}
+
+.logout-btn {
+    background: #8B0000;
+    color: white;
+}
+
+.logout-btn:hover {
+    background: #b91c1c;
+}
+
+
+.main-content {
+    padding: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.user-header {
+    margin-bottom: 30px;
+}
+
+.user-header h1 {
+    color: #291B0B;
+    font-size: 36px;
+    margin: 0 0 10px 0;
+}
+
+.welcome-message {
+    color: #666;
+    font-size: 18px;
+    margin: 0;
+}
+
+
+.user-stats {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.stat-card {
+    background: #fdf2e1;
+    border: 1px solid #4A3115;
+    border-radius: 12px;
+    padding: 25px;
+    flex: 1;
+    min-width: 220px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.stat-card h3 {
+    margin: 0 0 15px 0;
+    color: #291B0B;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.stat-card .stat-number {
+    font-size: 42px;
+    font-weight: bold;
+    color: #291B0B;
+    margin: 0 0 5px 0;
+}
+
+.stat-card .stat-label {
+    color: #666;
+    margin: 0;
+    font-size: 14px;
+}
+
+
+.section-title {
+    color: #291B0B;
+    font-size: 28px;
+    margin: 40px 0 25px 0;
+    border-bottom: 3px solid #e4b988;
+    padding-bottom: 12px;
+}
+
+
+.continue-reading {
+    background: #fdf2e1;
+    border: 2px solid #e4b988;
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.book-cover {
+    width: 90px;
+    height: 120px;
+    background: #e4b988;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #291B0B;
+    font-size: 32px;
+    font-weight: bold;
+    flex-shrink: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.continue-reading .book-info {
+    flex: 1;
+}
+
+.continue-reading h4 {
+    margin: 0 0 8px 0;
+    color: #291B0B;
+    font-size: 24px;
+}
+
+.continue-reading .author {
+    color: #666;
+    font-size: 16px;
+    margin: 0 0 15px 0;
+}
+
+.progress {
+    width: 100%;
+    max-width: 500px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-fill {
+    height: 100%;
+    background: #291B0B;
+    border-radius: 5px;
+    transition: width 0.3s;
+}
+
+.progress-text {
+    font-size: 14px;
+    color: #666;
+    margin-top: 8px;
+}
+
+.continue-btn {
+    background: #291B0B;
+    color: white;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.continue-btn:hover {
+    background: #e4b988;
+    color: #291B0B;
+}
+
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.book-card {
+    background: #fdf2e1;
+    border: 1px solid #4A3115;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    transition: all 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.book-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    border-color: #e4b988;
+}
+
+.book-details {
+    flex: 1;
+}
+
+.book-details h4 {
+    margin: 0 0 8px 0;
+    color: #291B0B;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.book-details .author {
+    color: #666;
+    font-size: 14px;
+    margin: 0 0 12px 0;
+}
+
+.book-details .meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.book-details .date {
+    color: #888;
+    font-size: 13px;
+}
+
+
+.status-badge {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.status-badge.ongoing {
+    background: #e4b988;
+    color: #291B0B;
+}
+
+.status-badge.overdue {
+    background: #8B0000;
+    color: white;
+}
+
+.status-badge.returned {
+    background: #4CAF50;
+    color: white;
+}
+
+
+.empty-state {
+    background: #fdf2e1;
+    border: 2px dashed #e4b988;
+    border-radius: 12px;
+    padding: 40px;
+    text-align: center;
+    color: #666;
+    grid-column: 1 / -1;
+}
+
+.empty-state p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.empty-state a {
+    color: #291B0B;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #e4b988;
+    padding-bottom: 2px;
+}
+
+.empty-state a:hover {
+    color: #e4b988;
+}
+
+
+.view-all {
+    text-align: right;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.view-all a {
+    color: #291B0B;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.view-all a:hover {
+    background: #e4b988;
+    color: #291B0B;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .main-content {
+        padding: 30px;
+    }
+    
+    .stat-card {
+        min-width: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top-nav {
+        padding: 10px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .nav-left h2 {
+        font-size: 20px;
+    }
+    
+    .nav-right {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .main-content {
+        padding: 20px;
+    }
+    
+    .user-header h1 {
+        font-size: 30px;
+    }
+    
+    .user-stats {
+        flex-direction: column;
+    }
+    
+    .stat-card {
+        min-width: 100%;
+    }
+    
+    .book-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .continue-reading {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .continue-btn {
+        width: 100%;
+    }
+    
+    .progress {
+        max-width: 100%;
+    }
+    
+    .section-title {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .main-content {
+        padding: 15px;
+    }
+    
+    .user-header h1 {
+        font-size: 26px;
+    }
+    
+    .welcome-message {
+        font-size: 16px;
+    }
+    
+    .stat-card .stat-number {
+        font-size: 36px;
+    }
+    
+    .book-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .book-cover {
+        width: 100px;
+        height: 130px;
+    }
+    
+    .book-details .meta {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .continue-reading h4 {
+        font-size: 20px;
+    }
+    
+    .nav-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .user-header h1 {
+        font-size: 22px;
+    }
+    
+    .stat-card {
+        padding: 20px;
+    }
+    
+    .stat-card .stat-number {
+        font-size: 32px;
+    }
+    
+    .section-title {
+        font-size: 22px;
+    }
+    
+    .book-cover {
+        width: 80px;
+        height: 110px;
+        font-size: 24px;
+    }
+    
+    .nav-left h2 {
+        font-size: 18px;
+    }
+    
+    .nav-right {
+        flex-direction: column;
+        gap: 8px;
+    }
+    
+    .nav-btn {
+        text-align: center;
+    }
+}
+
+
+@media (hover: none) and (pointer: coarse) {
+    .book-card:hover {
+        transform: none;
+    }
+    
+    .stat-card:hover {
+        transform: none;
+    }
+    
+    .continue-btn,
+    .nav-btn,
+    .view-all a {
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
